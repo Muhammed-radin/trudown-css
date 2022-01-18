@@ -192,3 +192,37 @@ window:hover {
   width: 1.5rem;
   padding: 0;
 }
+win-body {
+  background: var(--bg);
+    padding: .2rem;
+  width: 99.4%;
+  position: absolute;
+  top: 1.9rem;
+  height: max-content;
+  margin: .1rem;
+  left: 0;
+  margin-left: 0;
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+}
+@media screen and (max-width: 600px){
+  win-body{
+      width: 98.5%;
+  }
+}
+win-body:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
+  -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
+  box-shadow: 1px 1px 2px 1px #CFCFCF;
+}
+line {
+  width: .1px;
+  margin: .3rem;
+  background: #ccc;
+  height: 100%;
+  border: .5px solid #ccc;
+}
+hr {
+  background: #ccc;
+}
