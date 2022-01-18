@@ -148,6 +148,7 @@ window {
   width: 90%;
   position: fixed;
   z-index: 10;
+  height: 1.5rem;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
@@ -156,41 +157,38 @@ window {
   background: red;
   position: absolute;
   top: 0;
-  right: .3rem;
+  right: .1rem;
   font-size: 10px;
   text-align: center;
   height: 1.5rem;
   width: 1.5rem;
+  padding: 0;
 }
-.window-close i{
-  margin: .1rem;
+window:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
+  -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
+  box-shadow: 1px 1px 2px 1px #CFCFCF;
 }
- .tr-close {
- box-sizing: border-box;
- position: relative;
- display: block;
- transform: scale(var(--ggs,1));
- width: 15px;
- height: 15px;
- border: 2px solid transparent;
- border-radius: 40px
+.window-close i {
+  text-align: center;
 }
-
-.tr-close::after,
-.tr-close::before {
- content: "";
- display: block;
- box-sizing: border-box;
- position: absolute;
- width: 16px;
- height: 2px;
- background: currentColor;
- transform: rotate(45deg);
- border-radius: 5px;
- top: 8px;
- left: 1px
+.window-screen{
+  position: absolute;
+  top: 0;
+  right: 1.6rem;
+  font-size: 10px;
+  text-align: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
 }
-
-.tr-close::after {
- transform: rotate(-45deg)
-} 
+.window-minimize {
+  position: absolute;
+  top: 0;
+  right: 3.2rem;
+  font-size: 10px;
+  text-align: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
+}
