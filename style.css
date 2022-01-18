@@ -142,13 +142,13 @@ textarea:focus {
   -moz-box-shadow: 0px 0px 2px 1px #cfcfcf;
   box-shadow: 0px 0px 2px 1px #cfcfcf;
 }
-window {
+window,.window {
   background: var(--bg);
   padding: .2rem;
   width: 90%;
   position: fixed;
   z-index: 10;
-  height: 1.5rem;
+  height: 2.5rem;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
@@ -164,7 +164,7 @@ window {
   width: 1.5rem;
   padding: 0;
 }
-window:hover {
+window:hover,.window:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
   -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
   box-shadow: 1px 1px 2px 1px #CFCFCF;
@@ -192,12 +192,12 @@ window:hover {
   width: 1.5rem;
   padding: 0;
 }
-win-body {
+win-body,.win-body {
   background: var(--bg);
     padding: .2rem;
   width: 99.4%;
   position: absolute;
-  top: 1.9rem;
+  top: 3rem;
   height: max-content;
   margin: .1rem;
   left: 0;
@@ -207,14 +207,30 @@ win-body {
   box-shadow: 1px 1px 2px 1px #cfcfcf;
 }
 @media screen and (max-width: 600px){
-  win-body{
+  win-body,.win-body{
       width: 98.5%;
   }
 }
-win-body:hover {
+win-body:hover,.win-body:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
   -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
   box-shadow: 1px 1px 2px 1px #CFCFCF;
+}
+win-menu,.win-menu{
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--grey);
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+  text-decoration: underline transparent;
+}
+win-menu a{
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--grey);
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+  text-decoration: underline transparent;
 }
 line {
   width: .1px;
