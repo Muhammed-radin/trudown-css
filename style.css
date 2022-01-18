@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --grey: black;
+  --bg: ghostwhite;
+  --brdr: white;
+  --brdr1: whitesmoke;
+}
+
+* {
+  transition: .2s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 5rem
+}
+
+h2 {
+  font-size: 2.5rem
+}
+
+h3 {
+  font-size: 2rem
+}
+
+h4 {
+  font-size: 1.5rem
+}
+
+u {
+  text-decoration: none;
+  border-bottom: .5px solid #222
+}
+
+code,
+code * {
+  font-family: monospace
+}
+
+pre {
+  display: block;
+  margin: 0;
+  padding: 12px 8px;
+  background: #fff;
+  border: 1px solid #888
+}
+
+.button,
+button {
+  background: var(--bg);
+  border: 0px solid;
+  color: var(--grey);
+  padding: .4rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+  border: 1px solid var(--brdr);
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+  transition: .2s;
+}
+
+:disabled {
+  background: #cfcfcf52;
+  color: grey;
+}
+
+:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  -moz-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+.button,button:hover {
+  outline: solid #ccc;
+  outline-style: double;
+  outline-width: 2px;
+}
+.button,button:hover:disabled {
+  outline: solid;
+  outline-style: double;
+  outline-width: 0px;
+}
+:disabled {
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="phone"],
+textarea {
+  color: var(--grey);
+  font-family: 'Montserrat', sans-serif;
+  padding: .4rem;
+  border: 1px solid var(--brdr1);
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: .1rem;
+  background: var(--bg);
+  border-radius: 50%;
+  margin: .1rem;
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="phone"]:focus,
+textarea:focus {
+  color: var(--grey);
+  outline: none;
+  padding: .4rem;
+  font-family: 'Montserrat', monospace;
+  border: 1px solid var(--brdr1);
+  -webkit-box-shadow: 0px 0px 2px 1px #cfcfcf;
+  -moz-box-shadow: 0px 0px 2px 1px #cfcfcf;
+  box-shadow: 0px 0px 2px 1px #cfcfcf;
+}
+window {
+  background: var(--bg);
+  padding: .2rem;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 1px 2px 1px #cfcfcf;
+}
+.window-close{
+  background: red;
+  position: absolute;
+  top: 0;
+  right: .3rem;
+  font-size: 10px;
+  text-align: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.window-close i{
+  margin: .1rem;
+}
+ .tr-close {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ width: 15px;
+ height: 15px;
+ border: 2px solid transparent;
+ border-radius: 40px
+}
+
+.tr-close::after,
+.tr-close::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ width: 16px;
+ height: 2px;
+ background: currentColor;
+ transform: rotate(45deg);
+ border-radius: 5px;
+ top: 8px;
+ left: 1px
+}
+
+.tr-close::after {
+ transform: rotate(-45deg)
+} 
