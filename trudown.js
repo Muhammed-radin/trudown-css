@@ -1,6 +1,7 @@
 $("body").append(`<div id="allScriptHtml"></div>`)
 
 
+
 function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   if (name == undefined, null) {
     name = 'checknow'
@@ -86,11 +87,11 @@ function Msg(msg, color) {
 
 
 
-let boolean = Boolean()
+var boolean = Boolean()
 
 function onhider(id, boolean) {
   if (boolean == true) {
-     $(id).css('display', 'none')
+    $(id).css('display', 'none')
     //document.getElementById(id).style.display = 'none'
   } else {
 

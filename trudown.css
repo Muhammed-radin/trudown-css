@@ -7,7 +7,9 @@
   --brdr: white;
   --brdr1: whitesmoke;
 }
-
+body{
+  margin: 0;
+}
 * {
   transition: .2s;
   font-family: 'Montserrat', sans-serif;
