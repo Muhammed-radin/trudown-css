@@ -7,9 +7,11 @@
   --brdr: white;
   --brdr1: whitesmoke;
 }
-body{
+
+body {
   margin: 0;
 }
+
 * {
   transition: .2s;
   font-family: 'Montserrat', sans-serif;
@@ -62,6 +64,8 @@ button {
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
   transition: .2s;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 
 :disabled {
@@ -74,16 +78,25 @@ button {
   -moz-box-shadow: 0px 0px 0px 0px;
   box-shadow: 0px 0px 0px 0px;
 }
-.button,button:hover {
-  outline: solid #ccc;
-  outline-style: double;
-  outline-width: 2px;
+
+
+.button:hover,
+button:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  border: 2px solid #ccc;
+  border-style: double;
 }
-.button,button:hover:disabled {
+
+.button,
+button:hover:disabled {
   outline: solid;
   outline-style: double;
   outline-width: 0px;
 }
+
 :disabled {
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
@@ -144,7 +157,9 @@ textarea:focus {
   -moz-box-shadow: 0px 0px 2px 1px #cfcfcf;
   box-shadow: 0px 0px 2px 1px #cfcfcf;
 }
-window,.window {
+
+window,
+.window {
   background: var(--bg);
   padding: .2rem;
   width: 90%;
@@ -155,7 +170,8 @@ window,.window {
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
 }
-.window-close{
+
+.window-close {
   background: red;
   position: absolute;
   top: 0;
@@ -166,15 +182,19 @@ window,.window {
   width: 1.5rem;
   padding: 0;
 }
-window:hover,.window:hover {
+
+window:hover,
+.window:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
   -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
   box-shadow: 1px 1px 2px 1px #CFCFCF;
 }
+
 .window-close i {
   text-align: center;
 }
-.window-screen{
+
+.window-screen {
   position: absolute;
   top: 0;
   right: 1.6rem;
@@ -184,6 +204,7 @@ window:hover,.window:hover {
   width: 1.5rem;
   padding: 0;
 }
+
 .window-minimize {
   position: absolute;
   top: 0;
@@ -194,9 +215,11 @@ window:hover,.window:hover {
   width: 1.5rem;
   padding: 0;
 }
-win-body,.win-body {
+
+win-body,
+.win-body {
   background: var(--bg);
-    padding: .2rem;
+  padding: .2rem;
   width: 99.4%;
   position: absolute;
   top: 3rem;
@@ -208,44 +231,65 @@ win-body,.win-body {
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
 }
-@media screen and (max-width: 600px){
-  win-body,.win-body{
-      width: 98.5%;
+
+@media screen and (max-width: 600px) {
+
+  win-body,
+  .win-body {
+    width: 98.5%;
   }
 }
-win-body:hover,.win-body:hover {
+
+win-body:hover,
+.win-body:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #CFCFCF;
   -moz-box-shadow: 1px 1px 2px 1px #CFCFCF;
   box-shadow: 1px 1px 2px 1px #CFCFCF;
 }
-win-menu,.win-menu{
+
+win-menu,
+.win-menu {
   font-size: 12px;
   color: var(--grey);
   text-decoration-line: none;
   text-decoration-color: transparent;
   text-decoration: underline transparent;
 }
-win-menu a{
+
+win-menu a {
   font-size: 12px;
-    cursor: pointer;
+  cursor: pointer;
 
   color: var(--grey);
   text-decoration-line: none;
   text-decoration-color: transparent;
   text-decoration: underline transparent;
 }
-line {
+
+line,
+l,
+.l,
+.line {
   width: .1px;
   margin: .3rem;
   background: #ccc;
   height: 100%;
   border: .5px solid #ccc;
 }
+
 hr {
   background: #ccc;
 }
 
+.m1,
+m1 {
+  margin: 1rem;
+}
 
+.p1,
+p1 {
+  padding: 1rem;
+}
 
 /***/
 
@@ -350,19 +394,27 @@ hr {
 
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 100%;
+  /* Width of the outside container */
 }
 
 /* The slider itself */
 .slider {
-  -webkit-appearance: none; /* Override default CSS styles */
+  -webkit-appearance: none;
+  /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 10px; /* Specified height */
-  background: whitesmoke; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 100%;
+  /* Full-width */
+  height: 10px;
+  /* Specified height */
+  background: whitesmoke;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
   transition: opacity .2s;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -374,55 +426,56 @@ hr {
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
+  /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  width: 20px; /* Set a specific slider handle width */
-  height: 20px; /* Slider handle height */
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
   background: var(--bg);
   border-radius: 6px;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
-  cursor: pointer; /* Cursor on hover */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 20px; /* Set a specific slider handle width */
-  height: 20px; /* Slider handle height */
-  background: var(--bg); /* Green background */
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: var(--bg);
+  /* Green background */
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf;
   box-shadow: 1px 1px 2px 1px #cfcfcf;
-  cursor: pointer; /* Cursor on hover */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 
 
-progress::-webkit-progress-bar{
+progress::-webkit-progress-bar {
   background: whitesmoke;
   border-radius: 4px;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
   -moz-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
   box-shadow: 1px 1px 2px 1px #cfcfcf inset;
   cursor: progress;
-  
-}
-progress{
-  background: whitesmoke;
-  border-radius: 4px;
-    -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
-  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
-  box-shadow: 1px 1px 2px 1px #cfcfcf inset;
-  cursor: progress;
+
 }
 
-progress::-moz-progress-bar{
+progress {
   background: whitesmoke;
   border-radius: 4px;
   -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
@@ -430,13 +483,24 @@ progress::-moz-progress-bar{
   box-shadow: 1px 1px 2px 1px #cfcfcf inset;
   cursor: progress;
 }
-::-webkit-progress-value{
+
+progress::-moz-progress-bar {
+  background: whitesmoke;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
+  -moz-box-shadow: 1px 1px 2px 1px #cfcfcf inset;
+  box-shadow: 1px 1px 2px 1px #cfcfcf inset;
+  cursor: progress;
+}
+
+::-webkit-progress-value {
   background: grey;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   animation: progress 3s infinite;
 }
+
 /*@keyframes progressbar {
   0% {
     transform: translateX(-40%)
