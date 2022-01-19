@@ -1,7 +1,8 @@
 $("body").append(`<div id="allScriptHtml"></div>`)
 
-function alrtNot(msg, bgcolor, name, action, icon, sec,color) {
-  if (name == undefined,null) {
+
+function alertNot(msg, bgcolor, name, action, icon, sec, color) {
+  if (name == undefined, null) {
     name = 'checknow'
   }
   if (bgcolor == undefined) {
@@ -22,13 +23,13 @@ function alrtNot(msg, bgcolor, name, action, icon, sec,color) {
   $("#allScriptHtml").append(`
       <div class="bg-alrtNotfy">
         <div class="alrtNotfy">
-          <i class="` + icon + ` -icons"></i><center>` + msg + `</center><b><a href="#" onclick='`+action+`' style="text-decoration: none">` + name + `</a></b>
+          <i class="` + icon + ` -icons"></i><center>` + msg + `</center><b><a href="#" onclick='` + action + `' style="text-decoration: none">` + name + `</a></b>
         </div>
       </div>
       <style>
       .bg-alrtNotfy {
         background: ` + bgcolor + `;
-        color: `+color+`;
+        color: ` + color + `;
         box-shadow: 1px 1px 3px 1px #cfcfcf;
         border-radius: 1px;
         position: fixed;
@@ -81,4 +82,19 @@ function Msg(msg, color) {
       $("#msg").remove()
     })
   }, 5000)
+}
+
+
+
+let boolean = Boolean()
+
+function onhider(id, boolean) {
+  if (boolean == true) {
+     $(id).css('display', 'none')
+    //document.getElementById(id).style.display = 'none'
+  } else {
+
+    $(id).css('display', 'block')
+    // document.getElementById(id).style.display = 'block'
+  }
 }

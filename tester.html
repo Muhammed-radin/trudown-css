@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>trudown.css</title>
 
   <!-- HTML -->
 
@@ -25,7 +25,7 @@
     <input type="checkbox">
     <input type="radio">
   </div>
-  <progress value="50" max="100"></progress>
+  <progress value=".1" max="100"></progress>
   <textarea name="" id=rows="20" cols="40"></textarea>
   <div id="toggler">
     <label for="" class="switch">
@@ -43,10 +43,11 @@
     <win-text>trudown.css example</win-text>
     <button type="submit" class="window-minimize"><i class="fa fa-minus"></i></button>
     <button type="submit" class="window-screen"><i class="far fa-square"></i></button>
-    <button type="submit" class="window-close"><i class="fa fa-close"></i></button>
+    <button type="submit" class="window-close" onclick="onhider('window',true)"><i class="fa fa-close"></i></button>
     <br />
     <win-menu>
       <a href="#">open</a>
+      <line></line>
       <a href="#">close</a>
     </win-menu>
     <br />
@@ -58,7 +59,7 @@
         <button><i class="fab fa-github"></i>
           <line></line>trudown.css
         </button>
-        <button><i class="fab fa-dochub"></i>
+        <button onclick='alertNot("this is testing....","","github","Msg()","fab fa-dochub")'><i class="fab fa-dochub"></i>
           <line></line>documention
         </button>
       </center>
@@ -66,6 +67,12 @@
     </win-body>
   </window>
   
+  <div class="dropdown">
+    <span class="drptext"></span>
+    <div class="drp-content">
+      
+    </div>
+  </div>
   <div class="slidecontainer">
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
   </div>

@@ -218,7 +218,6 @@ win-body:hover,.win-body:hover {
 }
 win-menu,.win-menu{
   font-size: 12px;
-  font-weight: bold;
   color: var(--grey);
   text-decoration-line: none;
   text-decoration-color: transparent;
@@ -226,7 +225,8 @@ win-menu,.win-menu{
 }
 win-menu a{
   font-size: 12px;
-  font-weight: bold;
+    cursor: pointer;
+
   color: var(--grey);
   text-decoration-line: none;
   text-decoration-color: transparent;
