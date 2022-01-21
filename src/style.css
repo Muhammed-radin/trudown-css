@@ -1,8 +1,8 @@
 body {
-  background: url(/src/img/bg.png)  no-repeat center;
+  background: url(https://encrypted-tbn0..com/images?q=tbn:&usqp=CAU) repeat center;
   width: 100%;
   height: 100vh;
-  color: white;
+  color: black;
   overflow: hidden;
  /* background-image: linear-gradient(to bottom,blueviolet, lightblue)*/
 }
@@ -15,4 +15,5 @@ footer{
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  font-family: cursive;
 }

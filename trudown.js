@@ -1,6 +1,7 @@
 $("body").append(`<div id="allScriptHtml"></div>`)
 
 
+
 function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   if (name == undefined, null) {
     name = 'checknow'
@@ -97,4 +98,28 @@ function onhider(id, boolean) {
     $(id).css('display', 'block')
     // document.getElementById(id).style.display = 'block'
   }
+}
+
+function changeToDark() {
+  $("body").append('<style></style>')
+  $('style').html(`
+  :root {
+  --grey: white;
+  --bg: grey;
+  --brdr: white;
+  --brdr1: whitesmoke;
+}
+  `)
+}
+
+function changeToLight() {
+  $("body").append('<style></style>')
+  $('style').html(`
+  :root {
+  --grey: black;
+  --bg: ghostwhite;
+  --brdr: white;
+  --brdr1: whitesmoke;
+}
+ `)
 }
