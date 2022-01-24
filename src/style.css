@@ -1,9 +1,11 @@
 body {
-  background: url(https://encrypted-tbn0..com/images?q=tbn:&usqp=CAU) repeat center;
+  background-image: linear-gradient(to bottom,#FFD866,#FFBE00,#FFBE00,#DAA300);
   width: 100%;
   height: 100vh;
   color: black;
-  overflow: hidden;
+  overflow: hidden;  
+  font-family: 'Courier New', Courier, monospace;
+
  /* background-image: linear-gradient(to bottom,blueviolet, lightblue)*/
 }
 footer{
