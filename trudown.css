@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');*/
 
 :root {
-  --grey: black;
+  --grey: blueviolet;
   --bg: ghostwhite;
   --brdr: white;
   --brdr1: whitesmoke;
@@ -42,15 +42,40 @@ u {
 
 code,
 code * {
-  font-family: monospace
+  font-family: 'Courier New', Courier, monospace
+}
+.border-left {
+  border-left: 3px solid var(--grey);
+}
+.border-bottom {
+  border-bottom: 3px solid var(--grey);
+}
+.border-top {
+  border-top: 3px solid var(--grey);
+}
+.border-right {
+  border-right: 3px solid var(--grey);
+}
+.border-left-h:hover {
+  border-left: 3px solid var(--grey);
+}
+.border-bottom-h:hover {
+  border-bottom: 3px solid var(--grey);
+}
+.border-top-h:hover {
+  border-top: 3px solid var(--grey);
+}
+.border-right-h:hover {
+  border-right: 3px solid var(--grey);
 }
 
 pre {
   display: block;
   margin: 0;
   padding: 12px 8px;
-  background: #fff;
-  border: 1px solid #888
+  background: #cfcfcf58;
+  border: 1px solid #888;
+  overflow: auto;
 }
 
 .button,
