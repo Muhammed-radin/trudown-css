@@ -96,7 +96,7 @@ code * {
 pre,code {
   display: block;
   margin: 0;
-  background: #cfcfcf58 !important;
+  /*background: #cfcfcf58 !important;*/
   overflow: auto;
   border: 1px;
 }
