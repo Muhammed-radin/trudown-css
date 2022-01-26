@@ -1,7 +1,6 @@
 $("body").append(`<div id="allScriptHtml"></div>`)
 
 
-
 function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   if (name == undefined, null) {
     name = 'checknow'
