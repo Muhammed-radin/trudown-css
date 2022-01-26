@@ -9,7 +9,7 @@ body {
 
  /* background-image: linear-gradient(to bottom,blueviolet, lightblue)*/
 }
-footer{
+.footer{
   bottom: 0;
   position: absolute;
   left: 50%;
@@ -34,4 +34,19 @@ pre{
 }
 .body {
   background: white;
+}
+.ftr {
+  background: #42445A;
+  color: white;
+  padding: 2px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.ftr a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
