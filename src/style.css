@@ -50,3 +50,12 @@ pre{
   font-weight: bold;
   text-decoration: none;
 }
+@font-face {
+  font-family: peasone;
+  src: url(Peasone400.otf)
+}
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}

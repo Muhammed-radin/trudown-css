@@ -1,5 +1,7 @@
+
 $("body").append(`<div id="allScriptHtml"></div>`)
 
+alertNot('abc','','some','Msg()','fab fa-dochub')
 
 function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   if (name == undefined, null) {
@@ -12,7 +14,7 @@ function alertNot(msg, bgcolor, name, action, icon, sec, color) {
     msg = 'you not typed msg'
   }
   if (action == undefined) {
-    action = 'alert("invalid value")'
+    action = 'alert("code-mistake:invalid value or you note added action")'
   }
   if (icon == undefined) {
     icon = 'fa fa-close'
@@ -23,9 +25,14 @@ function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   $("#allScriptHtml").append(`
       <div class="bg-alrtNotfy">
         <div class="alrtNotfy">
-          <i class="` + icon + ` -icons"></i><center>` + msg + `</center><b><a href="#" onclick='` + action + `' style="text-decoration: none">` + name + `</a></b>
+          <i class="` + icon + ` -icons"></i><center>` + msg + `</center><b><a href="#" onclick='actionaaa()' class='button' style="text-decoration: none">` + name + `</a></b>
         </div>
       </div>
+      <script>
+        function actionaaa() {
+          `+action+`
+        }
+      </script>
       <style>
       .bg-alrtNotfy {
         background: ` + bgcolor + `;
