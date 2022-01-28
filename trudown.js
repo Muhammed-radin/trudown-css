@@ -1,7 +1,7 @@
 
 $("body").append(`<div id="allScriptHtml"></div>`)
 
-alertNot('abc','','some','Msg()','fab fa-dochub')
+//alertNot('abc','','some','Msg()','fab fa-dochub')
 
 function alertNot(msg, bgcolor, name, action, icon, sec, color) {
   if (name == undefined, null) {
@@ -43,6 +43,7 @@ function alertNot(msg, bgcolor, name, action, icon, sec, color) {
         top: -10rem;
         width: 90% ;
         margin: .7rem;
+        font-family: 'Courier New', Courier, monospace;
         padding: .5rem;
         z-index: 2;
         animation: downNot ` + sec + ` 1;
@@ -71,6 +72,7 @@ function Msg(msg, color) {
  position: absolute;
   top: 80%;
   left: 50%;
+  font-family: 'Courier New', Courier, monospace;
   transform: translate(-50%, -50%);
  z-index: 10;
 }
