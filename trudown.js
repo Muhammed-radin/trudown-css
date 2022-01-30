@@ -108,7 +108,7 @@ function onAlert(head,message,icon) {
   `)
 }
 
-onAlert('some','hello','fa fa-warning')
+// onAlert('some','hello','fa fa-warning')
 
 
 function onHider(id, boolean) {
