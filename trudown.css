@@ -161,6 +161,7 @@ code {
   transform: translate(-50%,-50%);
   left: 50%;
   top: 50%;
+  z-index: 100;
   border: 1px solid #EEEEEE61;
   font-family: 'Courier New', Courier, monospace;
   -webkit-box-shadow: 1px 1px 2px 1px var(--sh);

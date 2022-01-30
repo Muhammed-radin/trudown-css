@@ -92,11 +92,23 @@ function Msg(msg, color) {
     })
   }, 5000)
 }
-function fname(arg) {
-  // body...
+function onAlert(head,message,icon) {
+  $("#allScriptHtml").append(`
+   <div class="bg alert" id="falert">
+    <i class="`+icon+`"></i><span class="m1">`+head+`</span>
+    <hr>
+    <span class="m1">
+       `+message+`
+    </span>
+    <br>
+    <div>
+      <button class="sec-button" onclick="onHider('falert',true)">ok</button>
+    </div>
+  </div>
+  `)
 }
 
-
+onAlert('some','hello','fa fa-warning')
 
 
 function onHider(id, boolean) {
