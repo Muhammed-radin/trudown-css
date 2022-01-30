@@ -46,6 +46,8 @@ bg,[role="bg"],.bg{
   padding-left: .1rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
+  width: max-content;
+  height: max-content
 }
 
 
@@ -152,7 +154,47 @@ code {
   overflow: auto;
   border: 1px;
 }
-
+.alert,[role="alert"],alert{
+  width: 80%;
+  margin: 1rem;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border: 1px solid #EEEEEE61;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-box-shadow: 1px 1px 2px 1px var(--sh);
+  -moz-box-shadow: 1px 1px 2px 1px var(--sh);
+  box-shadow: 1px 1px 2px 1px var(--sh);
+}
+.alert:hover,[role="alert"]:hover,alert:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px var(--sh);
+  -moz-box-shadow: 1px 1px 2px 1px var(--sh);
+  box-shadow: 1px 1px 2px 1px var(--sh);
+}
+.alert i,[role="alert"] i,alert i{
+  margin: .4rem;
+}
+.alert hr,[role="alert"] hr,alert hr{
+  background: #EBEBEB80;
+  border: 1px solid #EBEBEB80;
+}
+.sec-button{
+  background: #4756FF;
+  color: white;
+  border: 2px solid;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.alert button,[role="alert"] button,alert button{
+  margin: 1rem;
+  margin-left: 95%;
+  transform: translate(-90%)
+}
+.sec-button:hover{
+  border: 4px solid;
+  border-style: double;
+}
 .button,
 button {
   background: var(--bg);

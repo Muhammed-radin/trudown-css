@@ -92,17 +92,20 @@ function Msg(msg, color) {
     })
   }, 5000)
 }
+function fname(arg) {
+  // body...
+}
 
 
 
-var boolean = Boolean()
 
-function onhider(id, boolean) {
+function onHider(id, boolean) {
   if (boolean == true) {
-    $(id).css('display', 'none')
+  $('#'+id).fadeOut(500,function (){
+    $('#'+id).css('display', 'none')
+  })
     //document.getElementById(id).style.display = 'none'
   } else {
-
     $(id).css('display', 'block')
     // document.getElementById(id).style.display = 'block'
   }
