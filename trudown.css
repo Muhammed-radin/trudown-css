@@ -42,6 +42,10 @@ u {
 bg,[role="bg"],.bg{
   background: var(--bg);
   border: 1px solid var(--brdr);
+  padding-right: .1rem;
+  padding-left: .1rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
 }
 
 
@@ -130,7 +134,16 @@ nav img,.nav img,[role="nav"] img{
 .border-right-c {
   border-right: 5px solid var(--color);
 }
-
+.horz-vertic-center {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
 pre,
 code {
   display: block;
@@ -463,7 +476,99 @@ p10 {
 }
 
 
+.t1,
+t1 {
+  top: 1rem;
+}
 
+.b1,
+b1 {
+  bottom: 1rem;
+}/*
+.m2,
+m2 {
+  margin: 2rem;
+}
+
+.p2,
+p2 {
+  padding: 2rem;
+}
+.m3,
+m3 {
+  margin: 3rem;
+}
+
+.p3,
+p3 {
+  padding: 3rem;
+}
+.m4,
+m4 {
+  margin: 4rem;
+}
+
+.p4,
+p4 {
+  padding: 4rem;
+}
+.m5,
+m5 {
+  margin: 5rem;
+}
+
+.p5,
+p5 {
+  padding: 5rem;
+}
+.m6,
+m6 {
+  margin: 6rem;
+}
+
+.p6,
+p6 {
+  padding: 6rem;
+}
+.m7,
+m7 {
+  margin: 7rem;
+}
+
+.p7,
+p7 {
+  padding: 7rem;
+}
+.m8,
+m8 {
+  margin: 8rem;
+}
+
+.p8,
+p8 {
+  padding: 8rem;
+}
+.m9,
+m9 {
+  margin: 9rem;
+}
+
+.p9,
+p9 {
+  padding: 9rem;
+}
+.m10,
+m10 {
+  margin: 10rem;
+}
+
+.p10,
+p10 {
+  padding: 10rem;
+}
+
+
+*/
 
 /***/
 
@@ -636,7 +741,10 @@ box,
   /* Cursor on hover */
 }
 
-
+mdl,[role="mdl"],.mdl{
+  position: fixed;
+  z-index: 10;
+}
 
 progress::-webkit-progress-bar {
   background: whitesmoke;
@@ -721,6 +829,7 @@ progress::-moz-progress-bar {
   display: inline-block;
   width: 60px;
   height: 34px;
+
 }
 
 /* Hide default HTML checkbox */
@@ -732,12 +841,14 @@ progress::-moz-progress-bar {
 
 /* The slider */
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
-  top: 0;
+  /*top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;*/
+  opacity: 100%;
+  width: 100%;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
