@@ -39,6 +39,11 @@ u {
   text-decoration: none;
   border-bottom: .5px solid #222
 }
+bg,[role="bg"],.bg{
+  background: var(--bg);
+  border: 1px solid var(--brdr);
+}
+
 
 code,
 code * {
@@ -375,6 +380,90 @@ m1 {
 p1 {
   padding: 1rem;
 }
+.m2,
+m2 {
+  margin: 2rem;
+}
+
+.p2,
+p2 {
+  padding: 2rem;
+}
+.m3,
+m3 {
+  margin: 3rem;
+}
+
+.p3,
+p3 {
+  padding: 3rem;
+}
+.m4,
+m4 {
+  margin: 4rem;
+}
+
+.p4,
+p4 {
+  padding: 4rem;
+}
+.m5,
+m5 {
+  margin: 5rem;
+}
+
+.p5,
+p5 {
+  padding: 5rem;
+}
+.m6,
+m6 {
+  margin: 6rem;
+}
+
+.p6,
+p6 {
+  padding: 6rem;
+}
+.m7,
+m7 {
+  margin: 7rem;
+}
+
+.p7,
+p7 {
+  padding: 7rem;
+}
+.m8,
+m8 {
+  margin: 8rem;
+}
+
+.p8,
+p8 {
+  padding: 8rem;
+}
+.m9,
+m9 {
+  margin: 9rem;
+}
+
+.p9,
+p9 {
+  padding: 9rem;
+}
+.m10,
+m10 {
+  margin: 10rem;
+}
+
+.p10,
+p10 {
+  padding: 10rem;
+}
+
+
+
 
 /***/
 
