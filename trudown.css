@@ -790,38 +790,41 @@ mdl,[role="mdl"],.mdl{
 }
 
 progress::-webkit-progress-bar {
-  background: whitesmoke;
-  border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  background: #0093FF;
+  border-radius: 1px;
+  height: 5px;
+ /* -webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
   -moz-box-shadow: 1px 1px 2px 1px var(--sh) inset;
-  box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  box-shadow: 1px 1px 2px 1px var(--sh) inset;*/
   cursor: progress;
 
 }
 
 progress {
-  background: whitesmoke;
-  border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  background: #0093FF;
+  border-radius: 1px;
+  height: 5px;
+  /*-webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
   -moz-box-shadow: 1px 1px 2px 1px var(--sh) inset;
-  box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  box-shadow: 1px 1px 2px 1px var(--sh) inset;*/
   cursor: progress;
 }
 
 progress::-moz-progress-bar {
-  background: whitesmoke;
-  border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  background: #0093FF;
+  border-radius: 1px;
+  height: 5px;
+  /*-webkit-box-shadow: 1px 1px 2px 1px var(--sh) inset;
   -moz-box-shadow: 1px 1px 2px 1px var(--sh) inset;
-  box-shadow: 1px 1px 2px 1px var(--sh) inset;
+  box-shadow: 1px 1px 2px 1px var(--sh) inset;*/
   cursor: progress;
 }
 
 ::-webkit-progress-value {
-  background: grey;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  background: #0006FF;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;*/
+  border-radius: 1px;
   animation: progress 3s infinite;
 }
 
