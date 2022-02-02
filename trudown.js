@@ -146,3 +146,11 @@ function changeToLight() {
 }
  `)
 }
+
+
+
+function openModal(id) {
+  $("body").append(`<style></style>`)
+  $(id).css('display', 'block')
+  document.getElementById(id).style.display = 'block'
+}

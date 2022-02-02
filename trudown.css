@@ -954,7 +954,27 @@ input:checked+.slider:before {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+modal,.modal,[role="modal"]{
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  padding: .5rem;
+  min-width: 50%;
+  border: 2px solid var(--color) !important;
+  min-height: 20%;
+  max-width: 90% !important;
+  transform: translate(-50%,-50%)
+}
+.modal-top,[role="modal-top"]{
+  top: 1rem !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important
+}
+.modal .modal-head,modal .modal-head,[role="modal-head"]{
+  text-align: center;
+  margin: .3rem;
+}
 .dropdown-content p,
 .dropdown-content a {
   /*text-align: center;
