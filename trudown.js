@@ -154,8 +154,9 @@ function openModal(id) {
   $(id).css('display', 'block')
   document.getElementById(id).style.display = 'block'
 }
+
 var elem = document.querySelector("html");
-function openFullscreen() {
+function fullScreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
