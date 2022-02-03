@@ -154,3 +154,13 @@ function openModal(id) {
   $(id).css('display', 'block')
   document.getElementById(id).style.display = 'block'
 }
+var elem = document.querySelector("html");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
